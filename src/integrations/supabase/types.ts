@@ -14,7 +14,143 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      categories: {
+        Row: {
+          created_at: string
+          description: string | null
+          id: string
+          image_url: string | null
+          is_active: boolean
+          name: string
+          seo_description: string | null
+          seo_title: string | null
+          slug: string
+          sort_order: number
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_active?: boolean
+          name: string
+          seo_description?: string | null
+          seo_title?: string | null
+          slug: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_active?: boolean
+          name?: string
+          seo_description?: string | null
+          seo_title?: string | null
+          slug?: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      products: {
+        Row: {
+          category_id: string
+          collection: string | null
+          color: string | null
+          compare_at_price: number | null
+          created_at: string
+          description: string
+          dimensions: string | null
+          id: string
+          images: string[]
+          is_bestseller: boolean
+          is_featured: boolean
+          is_new_arrival: boolean
+          low_stock_threshold: number
+          material: string | null
+          name: string
+          price: number
+          rating: number
+          reviews_count: number
+          search_vector: unknown
+          short_description: string | null
+          sku: string
+          slug: string
+          status: string
+          stock_quantity: number
+          updated_at: string
+          weight_kg: number | null
+        }
+        Insert: {
+          category_id: string
+          collection?: string | null
+          color?: string | null
+          compare_at_price?: number | null
+          created_at?: string
+          description?: string
+          dimensions?: string | null
+          id?: string
+          images?: string[]
+          is_bestseller?: boolean
+          is_featured?: boolean
+          is_new_arrival?: boolean
+          low_stock_threshold?: number
+          material?: string | null
+          name: string
+          price: number
+          rating?: number
+          reviews_count?: number
+          search_vector?: unknown
+          short_description?: string | null
+          sku: string
+          slug: string
+          status?: string
+          stock_quantity?: number
+          updated_at?: string
+          weight_kg?: number | null
+        }
+        Update: {
+          category_id?: string
+          collection?: string | null
+          color?: string | null
+          compare_at_price?: number | null
+          created_at?: string
+          description?: string
+          dimensions?: string | null
+          id?: string
+          images?: string[]
+          is_bestseller?: boolean
+          is_featured?: boolean
+          is_new_arrival?: boolean
+          low_stock_threshold?: number
+          material?: string | null
+          name?: string
+          price?: number
+          rating?: number
+          reviews_count?: number
+          search_vector?: unknown
+          short_description?: string | null
+          sku?: string
+          slug?: string
+          status?: string
+          stock_quantity?: number
+          updated_at?: string
+          weight_kg?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "products_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
