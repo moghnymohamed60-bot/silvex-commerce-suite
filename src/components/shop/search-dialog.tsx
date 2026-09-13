@@ -59,7 +59,7 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl gap-0 p-0" showCloseButton={false}>
+      <DialogContent className="max-w-2xl gap-0 p-0">
         <DialogTitle className="sr-only">Search the Silvex collection</DialogTitle>
         <form
           className="flex items-center gap-3 border-b border-border px-5 py-4"

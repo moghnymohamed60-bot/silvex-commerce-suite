@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
-import { Menu, Search, ShoppingBag } from "lucide-react";
+import { Menu, Search, ShoppingBag, User } from "lucide-react";
 
 import { Logo } from "@/components/brand/logo";
 import { SearchDialog } from "@/components/shop/search-dialog";
@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/sheet";
 import { listCategories } from "@/lib/catalog.functions";
 import { useCartStore, useCartUi } from "@/stores/cart";
+import { useSession } from "@/hooks/use-session";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -23,6 +24,7 @@ export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const openCart = useCartUi((state) => state.open);
+  const { user } = useSession();
   const itemCount = useCartStore((state) =>
     state.lines.reduce((sum, line) => sum + line.quantity, 0),
   );
@@ -163,6 +165,17 @@ export function SiteHeader() {
               <Search />
             </Button>
             <ThemeToggle />
+            <Button asChild variant="ghost" size="icon" aria-label={user ? "Your account" : "Sign in"}>
+              {user ? (
+                <Link to="/admin">
+                  <User />
+                </Link>
+              ) : (
+                <Link to="/auth" search={{}}>
+                  <User />
+                </Link>
+              )}
+            </Button>
             <Button variant="ghost" size="icon" aria-label={`Bag, ${itemCount} items`} onClick={openCart} className="relative">
               <ShoppingBag />
               {itemCount > 0 && (
