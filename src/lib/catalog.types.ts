@@ -4,6 +4,11 @@ export interface Category {
   name: string;
   description: string | null;
   image_url: string | null;
+  // Back-office only fields; storefront queries do not select them.
+  sort_order?: number;
+  is_active?: boolean;
+  seo_title?: string | null;
+  seo_description?: string | null;
 }
 
 export interface Product {
@@ -11,6 +16,7 @@ export interface Product {
   slug: string;
   name: string;
   sku: string;
+  category_id?: string;
   short_description: string | null;
   description: string;
   price: number;
