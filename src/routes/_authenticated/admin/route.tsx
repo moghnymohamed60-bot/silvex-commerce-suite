@@ -111,9 +111,7 @@ function AdminLayout() {
       <div className="mx-auto flex max-w-[1500px] flex-col lg:flex-row">
         <aside className="border-b border-border bg-background lg:min-h-screen lg:w-64 lg:border-b-0 lg:border-r">
           <div className="flex items-center justify-between px-6 py-6">
-            <Link to="/">
-              <Logo className="text-lg" />
-            </Link>
+            <Logo className="text-lg" />
             <ThemeToggle />
           </div>
 
