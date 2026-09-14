@@ -11,32 +11,32 @@ const FAQS = [
   {
     question: "How long does delivery take?",
     answer:
-      "Most pieces ship within 2–4 weeks. Made-to-order upholstery can take 6–8 weeks; the lead time is shown on each product page before you order.",
+      "Most pieces ship within 2–4 weeks. Made-to-order cushions and canopies can take 6–8 weeks; the lead time is shown on each product page before you order.",
   },
   {
     question: "What is white-glove delivery?",
     answer:
-      "A two-person team brings the piece into your home, assembles it where needed, places it in the room of your choice and removes all packaging.",
+      "A two-person team carries the piece through to your terrace or garden, assembles it where needed, positions it where you want it and removes all packaging.",
   },
   {
     question: "Can I return something?",
     answer:
-      "Yes. Undamaged pieces can be returned within 30 days of delivery. Made-to-order upholstery in a custom fabric is final sale.",
+      "Yes. Undamaged pieces can be returned within 30 days of delivery. Made-to-order cushions in a custom fabric are final sale.",
   },
   {
-    question: "Do you offer fabric or timber samples?",
+    question: "Do you offer fabric or teak samples?",
     answer:
       "We send up to five samples free of charge. Contact us with the pieces you are considering and we will post them out.",
   },
   {
     question: "What warranty is included?",
     answer:
-      "Frames and joinery are covered for ten years, and upholstery for three. We keep spare parts in stock so single components can be replaced.",
+      "Frames and joinery are covered for ten years, and cushions and canopies for three. We keep spare parts in stock so single components can be replaced.",
   },
   {
-    question: "How should I care for solid timber?",
+    question: "How should I care for teak left outside?",
     answer:
-      "Dust with a dry cloth, wipe spills immediately and re-oil once a year with a clear furniture oil. Keep pieces out of prolonged direct sunlight.",
+      "Left untreated, teak weathers to a soft silver-grey — rinse it and brush with mild soapy water twice a year. To keep the honey tone, clean and re-oil each spring.",
   },
 ];
 
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/faq")({
       {
         name: "description",
         content:
-          "Delivery times, white-glove service, returns, samples, warranty and care guidance for Silvex furniture.",
+          "Delivery times, terrace delivery, returns, samples, warranty and weather-care guidance for Silvex outdoor furniture.",
       },
       { property: "og:title", content: "Frequently Asked Questions | Silvex Furniture" },
       { property: "og:description", content: "Delivery, returns, warranty and care answers." },

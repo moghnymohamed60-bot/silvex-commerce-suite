@@ -10,7 +10,7 @@ import { formatPrice } from "@/lib/format";
 import { primaryImage } from "@/lib/catalog.types";
 
 const RECENT_KEY = "silvex-recent-searches";
-const POPULAR = ["Linen sofa", "Solid oak", "Dining table", "Marble", "Outdoor teak"];
+const POPULAR = ["Lounge set", "Teak dining", "Sun lounger", "Parasol", "Fire pit"];
 
 function readRecent(): string[] {
   if (typeof window === "undefined") return [];
@@ -73,7 +73,7 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
             autoFocus
             value={term}
             onChange={(event) => setTerm(event.target.value)}
-            placeholder="Search sofas, oak tables, lighting…"
+            placeholder="Search lounge sets, teak dining, parasols…"
             aria-label="Search products"
             className="h-8 flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground"
           />
@@ -124,7 +124,7 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
             <div className="py-6 text-center">
               <p className="text-base">No matches for “{term}”.</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Try a material, a room or a collection name.
+                Try a material, a range or a collection name.
               </p>
             </div>
           ) : (

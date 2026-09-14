@@ -9,16 +9,16 @@ export const Route = createFileRoute("/")({
   loader: () => getHomepage(),
   head: () => ({
     meta: [
-      { title: "Silvex Furniture | Furniture That Defines Your Space" },
+      { title: "Silvex Outdoor Furniture | Made for Life Outside" },
       {
         name: "description",
         content:
-          "Silvex crafts premium furniture in solid timber, natural linen and full-grain leather — sofas, beds, dining and outdoor pieces made in small runs.",
+          "Silvex makes premium outdoor furniture — lounge sets, outdoor sofas, teak dining, sun loungers, parasols and fire pits built for sun, rain and salt air.",
       },
-      { property: "og:title", content: "Silvex Furniture | Furniture That Defines Your Space" },
+      { property: "og:title", content: "Silvex Outdoor Furniture | Made for Life Outside" },
       {
         property: "og:description",
-        content: "Premium, small-run furniture for considered interiors.",
+        content: "All-weather outdoor furniture in FSC teak, woven rope and powder-coated aluminium.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -28,33 +28,34 @@ export const Route = createFileRoute("/")({
 });
 
 const PROMISES = [
-  { icon: Leaf, title: "Premium materials", copy: "Kiln-dried hardwood, natural linen and full-grain leather." },
-  { icon: Hammer, title: "Expert craftsmanship", copy: "Joinery by hand in small batches, never mass produced." },
+  { icon: Leaf, title: "All-weather materials", copy: "FSC teak, marine-grade aluminium and solution-dyed fabrics." },
+  { icon: Hammer, title: "Built for the elements", copy: "Quick-dry foam, UV-stable canopies, stainless fixings." },
   { icon: Lock, title: "Secure checkout", copy: "Encrypted card payment and privacy-first ordering." },
-  { icon: Truck, title: "White-glove delivery", copy: "Placed in the room of your choice, packaging removed." },
-  { icon: Headphones, title: "Real support", copy: "Talk to a design advisor before and after you buy." },
+  { icon: Truck, title: "Terrace delivery", copy: "Placed and assembled where you want it, packaging removed." },
+  { icon: Headphones, title: "Real support", copy: "Talk to an outdoor design advisor before and after you buy." },
 ];
 
 const TESTIMONIALS = [
   {
     quote:
-      "The Halden sofa completely changed our living room. The linen is substantial and the frame feels like it will outlive us.",
+      "Two winters on the coast and the Riviera set still looks new. The cushions dry in minutes after rain.",
     name: "Elena R.",
-    detail: "Halden Three-Seat Sofa",
+    detail: "Riviera 4-Piece Lounge Set",
   },
   {
     quote:
-      "Delivery was faultless — two people, in and out in twenty minutes, and they took the packaging with them.",
+      "The teak dining table has silvered beautifully. Delivery was faultless — assembled on the terrace in twenty minutes.",
     name: "Marcus D.",
-    detail: "Otto Oak Dining Table",
+    detail: "Lido Teak Dining Set",
   },
   {
     quote:
-      "I compared it against pieces at three times the price. Silvex won on the details you actually touch.",
+      "I compared it against parasols at twice the price. Silvex won on the details you actually touch.",
     name: "Priya N.",
-    detail: "Sereno Walnut Bed",
+    detail: "Ombra Cantilever Parasol",
   },
 ];
+
 
 function HomePage() {
   const { categories, featured, bestsellers, newArrivals } = Route.useLoaderData();
@@ -64,22 +65,23 @@ function HomePage() {
       <section className="relative">
         <div className="relative min-h-[78vh] overflow-hidden">
           <img
-            src="/images/hero-living-room.jpg"
-            alt="A sunlit living room with a linen sofa, oak coffee table and ceramic vase"
+            src="/images/hero-terrace.jpg"
+            alt="A Mediterranean terrace at sunset with a woven outdoor lounge set, teak table and parasol"
             width={1920}
             height={1200}
             className="absolute inset-0 size-full object-cover"
           />
           <div className="absolute inset-0 bg-foreground/35" />
           <div className="container-page relative flex min-h-[78vh] flex-col justify-end pb-16 pt-32">
-            <p className="label-eyebrow text-background/80">New season · 2026</p>
+            <p className="label-eyebrow text-background/80">Outdoor season · 2026</p>
             <h1 className="display-xl mt-5 max-w-3xl text-background">
-              Furniture That Defines Your Space.
+              Furniture Made for Life Outside.
             </h1>
             <p className="mt-6 max-w-xl text-sm leading-relaxed text-background/85">
-              Considered pieces made in small runs from solid timber, natural fibres and full-grain
-              leather — designed to be lived with for decades.
+              All-weather lounge, dining and shade in FSC teak, hand-woven rope and marine-grade
+              aluminium — built to stay outside, season after season.
             </p>
+
             <div className="mt-10 flex flex-wrap gap-3">
               <Button asChild variant="hero" size="editorial">
                 <Link to="/shop">Shop Collection</Link>
@@ -97,8 +99,9 @@ function HomePage() {
       <section className="container-page py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="label-eyebrow text-muted-foreground">Shop by room</p>
-            <h2 className="display-md mt-3">Featured categories</h2>
+            <p className="label-eyebrow text-muted-foreground">Shop by range</p>
+            <h2 className="display-md mt-3">Featured ranges</h2>
+
           </div>
           <Link to="/shop" className="link-underline text-sm">
             View everything
@@ -114,7 +117,7 @@ function HomePage() {
               className="group relative overflow-hidden bg-surface"
             >
               <img
-                src={category.image_url ?? "/images/hero-living-room.jpg"}
+                src={category.image_url ?? "/images/hero-terrace.jpg"}
                 alt={category.name}
                 width={800}
                 height={600}
@@ -162,26 +165,27 @@ function HomePage() {
       <section className="container-page pb-20">
         <div className="grid items-center gap-10 border border-border bg-surface p-8 md:grid-cols-2 md:p-12">
           <div>
-            <p className="label-eyebrow text-accent">Studio offer</p>
-            <h2 className="display-md mt-4">Up to 20% off selected dining</h2>
+            <p className="label-eyebrow text-accent">Season offer</p>
+            <h2 className="display-md mt-4">Up to 20% off selected outdoor dining</h2>
             <p className="mt-4 text-sm text-muted-foreground">
-              A small number of oak and walnut dining pieces are marked down while this season's
+              A small number of teak and ceramic dining pieces are marked down while this season's
               batch lasts. Once they are gone, they are gone.
             </p>
             <Button asChild variant="brass" size="editorial" className="mt-8">
-              <Link to="/category/$slug" params={{ slug: "dining-tables" }}>
-                Shop dining
+              <Link to="/category/$slug" params={{ slug: "outdoor-dining" }}>
+                Shop outdoor dining
               </Link>
             </Button>
           </div>
           <img
-            src="/images/products/otto-dining-table.jpg"
-            alt="Solid oak dining table in a bright room"
+            src="/images/products/lido-teak-dining-set.jpg"
+            alt="Teak outdoor dining table and chairs on a sunlit terrace"
             width={900}
             height={700}
             loading="lazy"
             className="aspect-[4/3] w-full object-cover"
           />
+
         </div>
       </section>
 
