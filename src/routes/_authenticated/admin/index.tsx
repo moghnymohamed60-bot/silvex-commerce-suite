@@ -32,9 +32,14 @@ function AdminDashboard() {
 
   return (
     <div>
-      <header>
-        <p className="label-eyebrow text-muted-foreground">Back office</p>
-        <h1 className="display-md mt-3">Dashboard</h1>
+      <header className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p className="label-eyebrow text-muted-foreground">Back office</p>
+          <h1 className="display-md mt-3">Dashboard</h1>
+        </div>
+        <Link to="/admin/analytics" className="link-underline text-xs">
+          View analytics
+        </Link>
       </header>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
