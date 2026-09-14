@@ -9,16 +9,16 @@ export const Route = createFileRoute("/")({
   loader: () => getHomepage(),
   head: () => ({
     meta: [
-      { title: "Silvex Furniture | Furniture That Defines Your Space" },
+      { title: "Silvex Outdoor Furniture | Made for Life Outside" },
       {
         name: "description",
         content:
-          "Silvex crafts premium furniture in solid timber, natural linen and full-grain leather — sofas, beds, dining and outdoor pieces made in small runs.",
+          "Silvex makes premium outdoor furniture — lounge sets, outdoor sofas, teak dining, sun loungers, parasols and fire pits built for sun, rain and salt air.",
       },
-      { property: "og:title", content: "Silvex Furniture | Furniture That Defines Your Space" },
+      { property: "og:title", content: "Silvex Outdoor Furniture | Made for Life Outside" },
       {
         property: "og:description",
-        content: "Premium, small-run furniture for considered interiors.",
+        content: "All-weather outdoor furniture in FSC teak, woven rope and powder-coated aluminium.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -28,33 +28,34 @@ export const Route = createFileRoute("/")({
 });
 
 const PROMISES = [
-  { icon: Leaf, title: "Premium materials", copy: "Kiln-dried hardwood, natural linen and full-grain leather." },
-  { icon: Hammer, title: "Expert craftsmanship", copy: "Joinery by hand in small batches, never mass produced." },
+  { icon: Leaf, title: "All-weather materials", copy: "FSC teak, marine-grade aluminium and solution-dyed fabrics." },
+  { icon: Hammer, title: "Built for the elements", copy: "Quick-dry foam, UV-stable canopies, stainless fixings." },
   { icon: Lock, title: "Secure checkout", copy: "Encrypted card payment and privacy-first ordering." },
-  { icon: Truck, title: "White-glove delivery", copy: "Placed in the room of your choice, packaging removed." },
-  { icon: Headphones, title: "Real support", copy: "Talk to a design advisor before and after you buy." },
+  { icon: Truck, title: "Terrace delivery", copy: "Placed and assembled where you want it, packaging removed." },
+  { icon: Headphones, title: "Real support", copy: "Talk to an outdoor design advisor before and after you buy." },
 ];
 
 const TESTIMONIALS = [
   {
     quote:
-      "The Halden sofa completely changed our living room. The linen is substantial and the frame feels like it will outlive us.",
+      "Two winters on the coast and the Riviera set still looks new. The cushions dry in minutes after rain.",
     name: "Elena R.",
-    detail: "Halden Three-Seat Sofa",
+    detail: "Riviera 4-Piece Lounge Set",
   },
   {
     quote:
-      "Delivery was faultless — two people, in and out in twenty minutes, and they took the packaging with them.",
+      "The teak dining table has silvered beautifully. Delivery was faultless — assembled on the terrace in twenty minutes.",
     name: "Marcus D.",
-    detail: "Otto Oak Dining Table",
+    detail: "Lido Teak Dining Set",
   },
   {
     quote:
-      "I compared it against pieces at three times the price. Silvex won on the details you actually touch.",
+      "I compared it against parasols at twice the price. Silvex won on the details you actually touch.",
     name: "Priya N.",
-    detail: "Sereno Walnut Bed",
+    detail: "Ombra Cantilever Parasol",
   },
 ];
+
 
 function HomePage() {
   const { categories, featured, bestsellers, newArrivals } = Route.useLoaderData();
