@@ -1,6 +1,6 @@
 import { createFileRoute, Link, Outlet, useNavigate } from "@tanstack/react-router";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Boxes, LayoutDashboard, LogOut, Package, Tags } from "lucide-react";
+import { BarChart3, Boxes, LayoutDashboard, LogOut, Package, Tags } from "lucide-react";
 import { toast } from "sonner";
 
 import { Logo } from "@/components/brand/logo";
@@ -25,6 +25,7 @@ const NAV = [
   { to: "/admin/products", label: "Products", icon: Package, exact: false },
   { to: "/admin/categories", label: "Categories", icon: Tags, exact: false },
   { to: "/admin/inventory", label: "Inventory", icon: Boxes, exact: false },
+  { to: "/admin/analytics", label: "Analytics", icon: BarChart3, exact: false },
 ] as const;
 
 function AdminLayout() {
