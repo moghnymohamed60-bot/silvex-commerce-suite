@@ -43,7 +43,6 @@ export interface AnalyticsActivity {
   action: string;
   entity: string;
   created_at: string;
-  details: Record<string, unknown>;
 }
 
 export interface AnalyticsResult {
@@ -107,7 +106,7 @@ export const adminAnalytics = createServerFn({ method: "GET" })
         .order("created_at"),
       ctx.supabase
         .from("audit_logs")
-        .select("id, action, entity, created_at, details")
+        .select("id, action, entity, created_at")
         .order("created_at", { ascending: false })
         .limit(12),
     ]);
@@ -242,7 +241,6 @@ export const adminAnalytics = createServerFn({ method: "GET" })
         action: row.action,
         entity: row.entity,
         created_at: row.created_at,
-        details: (row.details ?? {}) as Record<string, unknown>,
       })),
     };
   });
