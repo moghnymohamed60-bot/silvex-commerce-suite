@@ -117,7 +117,7 @@ function HomePage() {
               className="group relative overflow-hidden bg-surface"
             >
               <img
-                src={category.image_url ?? "/images/hero-living-room.jpg"}
+                src={category.image_url ?? "/images/hero-terrace.jpg"}
                 alt={category.name}
                 width={800}
                 height={600}
