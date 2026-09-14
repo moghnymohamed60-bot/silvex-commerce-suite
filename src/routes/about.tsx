@@ -9,10 +9,10 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Silvex is a small furniture studio making sofas, beds and dining pieces in solid timber and natural fibres, in limited runs.",
+          "Silvex is a small studio making outdoor furniture — lounge, dining and shade — in FSC teak and all-weather materials, in limited runs.",
       },
       { property: "og:title", content: "Our Story | Silvex Furniture" },
-      { property: "og:description", content: "A small studio making furniture built to last." },
+      { property: "og:description", content: "A small studio making outdoor furniture built to last." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -25,17 +25,17 @@ function AboutPage() {
     <div className="container-page py-16">
       <header className="max-w-2xl">
         <p className="label-eyebrow text-muted-foreground">Our story</p>
-        <h1 className="display-lg mt-4">Furniture worth keeping.</h1>
+        <h1 className="display-lg mt-4">Outdoor furniture worth keeping.</h1>
         <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-          Silvex began in a small joinery workshop with a simple frustration: most furniture is made
-          to be replaced. We wanted the opposite — pieces with honest materials, repairable joinery
-          and proportions that still feel right a decade later.
+          Silvex began in a small joinery workshop with a simple frustration: most outdoor furniture
+          is made to be replaced after two summers. We wanted the opposite — honest materials,
+          repairable joinery and finishes that only look better as they weather.
         </p>
       </header>
 
       <img
-        src="/images/hero-living-room.jpg"
-        alt="A Silvex living room setting with a linen sofa and oak table"
+        src="/images/hero-terrace.jpg"
+        alt="A Silvex terrace setting with a woven outdoor lounge set and teak table"
         width={1920}
         height={1200}
         className="mt-12 aspect-[16/7] w-full object-cover"
@@ -45,8 +45,9 @@ function AboutPage() {
         <section>
           <h2 className="font-display text-xl">Materials first</h2>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Kiln-dried oak and walnut, Belgian linen, full-grain leather and honed marble. We publish
-            what everything is made from, because the material is the product.
+            FSC-certified teak, powder-coated marine-grade aluminium, hand-woven olefin rope and
+            solution-dyed acrylic. We publish what everything is made from, because outdoors the
+            material is the product.
           </p>
         </section>
         <section>

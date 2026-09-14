@@ -17,12 +17,12 @@ export const Route = createFileRoute("/shop")({
       {
         name: "description",
         content:
-          "Browse the full Silvex collection — sofas, beds, dining, office and outdoor furniture in solid oak, linen, marble and full-grain leather.",
+          "Browse the full Silvex outdoor collection — lounge sets, outdoor sofas, teak dining, sun loungers, parasols, fire pits and planters.",
       },
       { property: "og:title", content: "Shop All Furniture | Silvex Furniture" },
       {
         property: "og:description",
-        content: "Filter the Silvex collection by room, material, colour and price.",
+        content: "Filter the Silvex outdoor collection by range, material, colour and price.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -49,8 +49,8 @@ function ShopPage() {
         <p className="label-eyebrow text-muted-foreground">The collection</p>
         <h1 className="display-lg mt-4">All furniture</h1>
         <p className="mt-4 text-sm text-muted-foreground">
-          Every Silvex piece is made in small runs from solid timber, natural fibres and full-grain
-          leather. Filter by room, material or price to find yours.
+          Every Silvex piece is built for the elements in FSC teak, hand-woven rope and marine-grade
+          aluminium. Filter by range, material or price to find yours.
         </p>
       </header>
 

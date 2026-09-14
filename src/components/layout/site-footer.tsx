@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const SHOP_LINKS = [
-  { label: "Sofas", slug: "sofas" },
-  { label: "Beds", slug: "beds" },
-  { label: "Dining Tables", slug: "dining-tables" },
-  { label: "Office Furniture", slug: "office-furniture" },
-  { label: "Home Decor", slug: "home-decor" },
+  { label: "Lounge Sets", slug: "lounge-sets" },
+  { label: "Outdoor Sofas", slug: "outdoor-sofas" },
+  { label: "Outdoor Dining", slug: "outdoor-dining" },
+  { label: "Sun Loungers", slug: "sun-loungers" },
+  { label: "Parasols & Shade", slug: "parasols-shade" },
 ];
 
 export function SiteFooter() {
@@ -19,8 +19,8 @@ export function SiteFooter() {
         <div className="space-y-4">
           <Logo />
           <p className="max-w-xs text-sm text-muted-foreground">
-            Furniture made in small runs from solid timber, natural fibres and full-grain leather —
-            designed to be lived with for decades.
+            Outdoor furniture made in small runs from FSC teak, hand-woven rope and marine-grade
+            aluminium — designed to stay outside for decades.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export function SiteFooter() {
             ))}
             <li>
               <Link to="/shop" className="text-muted-foreground transition-colors hover:text-foreground">
-                All furniture
+                All outdoor furniture
               </Link>
             </li>
           </ul>

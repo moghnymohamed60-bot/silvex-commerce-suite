@@ -322,7 +322,7 @@ function ProductPage() {
               <AccordionTrigger className="label-eyebrow">Delivery &amp; returns</AccordionTrigger>
               <AccordionContent>
                 <p className="pb-2 text-sm text-muted-foreground">
-                  Larger pieces are delivered by our two-person team, unpacked and placed in the room
+                  Larger pieces are delivered by our two-person team, unpacked and positioned on the terrace
                   of your choice. Standard lead time is 2–4 weeks. Returns are accepted within 30 days
                   of delivery on undamaged pieces.
                 </p>
@@ -332,7 +332,7 @@ function ProductPage() {
               <AccordionTrigger className="label-eyebrow">Care</AccordionTrigger>
               <AccordionContent>
                 <p className="pb-2 text-sm text-muted-foreground">
-                  Dust timber with a dry cloth and re-oil once a year. Vacuum upholstery on a low
+                  Rinse teak and brush with mild soapy water twice a year, or re-oil each spring. Hose
                   setting and rotate cushions monthly. Keep pieces out of direct sunlight to preserve
                   colour.
                 </p>

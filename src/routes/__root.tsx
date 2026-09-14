@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Silvex Furniture designs premium sofas, beds, dining and outdoor furniture in solid timber, natural fibres and full-grain leather.",
+          "Silvex designs premium outdoor furniture — lounge sets, outdoor sofas, teak dining, sun loungers, parasols and fire pits built for all weather.",
       },
       { name: "author", content: "Silvex Furniture" },
       { property: "og:site_name", content: "Silvex Furniture" },

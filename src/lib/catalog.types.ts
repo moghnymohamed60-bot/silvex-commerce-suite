@@ -92,5 +92,5 @@ export function isLowStock(product: Product): boolean {
 }
 
 export function primaryImage(product: Product): string {
-  return product.images[0] ?? "/images/hero-living-room.jpg";
+  return product.images[0] ?? "/images/hero-terrace.jpg";
 }
