@@ -10,7 +10,7 @@ import { formatPrice } from "@/lib/format";
 import { primaryImage } from "@/lib/catalog.types";
 
 const RECENT_KEY = "silvex-recent-searches";
-const POPULAR = ["Linen sofa", "Solid oak", "Dining table", "Marble", "Outdoor teak"];
+const POPULAR = ["Lounge set", "Teak dining", "Sun lounger", "Parasol", "Fire pit"];
 
 function readRecent(): string[] {
   if (typeof window === "undefined") return [];
