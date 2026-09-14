@@ -13,13 +13,13 @@ export const Route = createFileRoute("/shop")({
   },
   head: () => ({
     meta: [
-      { title: "Shop All Furniture | Silvex Furniture" },
+      { title: "Shop All Outdoor Furniture | Silvex" },
       {
         name: "description",
         content:
           "Browse the full Silvex outdoor collection — lounge sets, outdoor sofas, teak dining, sun loungers, parasols, fire pits and planters.",
       },
-      { property: "og:title", content: "Shop All Furniture | Silvex Furniture" },
+      { property: "og:title", content: "Shop All Outdoor Furniture | Silvex" },
       {
         property: "og:description",
         content: "Filter the Silvex outdoor collection by range, material, colour and price.",
