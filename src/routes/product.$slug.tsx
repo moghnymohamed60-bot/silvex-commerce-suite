@@ -332,9 +332,10 @@ function ProductPage() {
               <AccordionTrigger className="label-eyebrow">Care</AccordionTrigger>
               <AccordionContent>
                 <p className="pb-2 text-sm text-muted-foreground">
-                  Rinse teak and brush with mild soapy water twice a year, or re-oil each spring. Hose
-                  setting and rotate cushions monthly. Keep pieces out of direct sunlight to preserve
-                  colour.
+                  Rinse teak and brush with mild soapy water twice a year, or re-oil each spring.
+                  Hose cushion covers down and let them dry in the sun; store them indoors over
+                  winter to keep colours at their best.
+
                 </p>
               </AccordionContent>
             </AccordionItem>
