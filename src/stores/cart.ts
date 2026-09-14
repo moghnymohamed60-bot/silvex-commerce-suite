@@ -14,8 +14,8 @@ export interface CartLine {
   maxQuantity: number;
 }
 
-const FREE_SHIPPING_THRESHOLD = 750;
-const STANDARD_SHIPPING = 79;
+const FREE_SHIPPING_THRESHOLD = 35000;
+const STANDARD_SHIPPING = 3500;
 const TAX_RATE = 0.08;
 
 interface CartState {

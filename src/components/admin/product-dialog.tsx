@@ -103,7 +103,7 @@ export function ProductDialog({ open, onOpenChange, product, categories }: Produ
         <DialogHeader>
           <DialogTitle>{product ? "Edit product" : "New product"}</DialogTitle>
           <DialogDescription>
-            Prices are in USD. Draft products stay hidden from the storefront.
+            Prices are in EGP. Draft products stay hidden from the storefront.
           </DialogDescription>
         </DialogHeader>
 
