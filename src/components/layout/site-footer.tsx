@@ -93,7 +93,7 @@ export function SiteFooter() {
       <div className="border-t border-border">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>&copy; {new Date().getFullYear()} Silvex Furniture. All rights reserved.</p>
-          <p>Complimentary delivery on orders over $750 · 30-day returns</p>
+          <p>Complimentary delivery on orders over EGP 35,000 · 30-day returns</p>
         </div>
       </div>
     </footer>

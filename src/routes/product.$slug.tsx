@@ -62,7 +62,7 @@ export const Route = createFileRoute("/product/$slug")({
             offers: {
               "@type": "Offer",
               price: product.price,
-              priceCurrency: "USD",
+              priceCurrency: "EGP",
               availability:
                 product.stock_quantity > 0
                   ? "https://schema.org/InStock"
@@ -278,7 +278,7 @@ function ProductPage() {
 
           <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-3">
-              <Truck className="size-4" /> Complimentary white-glove delivery over $750
+              <Truck className="size-4" /> Complimentary white-glove delivery over EGP 35,000
             </li>
             <li className="flex items-center gap-3">
               <Undo2 className="size-4" /> 30-day returns on undamaged pieces

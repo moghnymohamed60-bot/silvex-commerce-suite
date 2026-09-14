@@ -1,12 +1,12 @@
-const currencyFormatter = new Intl.NumberFormat("en-US", {
+const currencyFormatter = new Intl.NumberFormat("en-EG", {
   style: "currency",
-  currency: "USD",
+  currency: "EGP",
   maximumFractionDigits: 0,
 });
 
-const currencyFormatterWithCents = new Intl.NumberFormat("en-US", {
+const currencyFormatterWithCents = new Intl.NumberFormat("en-EG", {
   style: "currency",
-  currency: "USD",
+  currency: "EGP",
   minimumFractionDigits: 2,
 });
 

@@ -59,7 +59,7 @@ export function SiteHeader() {
     <>
       <div className="bg-ink text-ink-foreground">
         <p className="container-page label-eyebrow py-2.5 text-center">
-          Complimentary delivery on orders over $750
+          Complimentary delivery on orders over EGP 35,000
         </p>
       </div>
 
