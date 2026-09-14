@@ -99,8 +99,9 @@ function HomePage() {
       <section className="container-page py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="label-eyebrow text-muted-foreground">Shop by room</p>
-            <h2 className="display-md mt-3">Featured categories</h2>
+            <p className="label-eyebrow text-muted-foreground">Shop by range</p>
+            <h2 className="display-md mt-3">Featured ranges</h2>
+
           </div>
           <Link to="/shop" className="link-underline text-sm">
             View everything
