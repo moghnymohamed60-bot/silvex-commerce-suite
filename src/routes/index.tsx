@@ -165,26 +165,27 @@ function HomePage() {
       <section className="container-page pb-20">
         <div className="grid items-center gap-10 border border-border bg-surface p-8 md:grid-cols-2 md:p-12">
           <div>
-            <p className="label-eyebrow text-accent">Studio offer</p>
-            <h2 className="display-md mt-4">Up to 20% off selected dining</h2>
+            <p className="label-eyebrow text-accent">Season offer</p>
+            <h2 className="display-md mt-4">Up to 20% off selected outdoor dining</h2>
             <p className="mt-4 text-sm text-muted-foreground">
-              A small number of oak and walnut dining pieces are marked down while this season's
+              A small number of teak and ceramic dining pieces are marked down while this season's
               batch lasts. Once they are gone, they are gone.
             </p>
             <Button asChild variant="brass" size="editorial" className="mt-8">
-              <Link to="/category/$slug" params={{ slug: "dining-tables" }}>
-                Shop dining
+              <Link to="/category/$slug" params={{ slug: "outdoor-dining" }}>
+                Shop outdoor dining
               </Link>
             </Button>
           </div>
           <img
-            src="/images/products/otto-dining-table.jpg"
-            alt="Solid oak dining table in a bright room"
+            src="/images/products/lido-teak-dining-set.jpg"
+            alt="Teak outdoor dining table and chairs on a sunlit terrace"
             width={900}
             height={700}
             loading="lazy"
             className="aspect-[4/3] w-full object-cover"
           />
+
         </div>
       </section>
 
