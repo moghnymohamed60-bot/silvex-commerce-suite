@@ -65,22 +65,23 @@ function HomePage() {
       <section className="relative">
         <div className="relative min-h-[78vh] overflow-hidden">
           <img
-            src="/images/hero-living-room.jpg"
-            alt="A sunlit living room with a linen sofa, oak coffee table and ceramic vase"
+            src="/images/hero-terrace.jpg"
+            alt="A Mediterranean terrace at sunset with a woven outdoor lounge set, teak table and parasol"
             width={1920}
             height={1200}
             className="absolute inset-0 size-full object-cover"
           />
           <div className="absolute inset-0 bg-foreground/35" />
           <div className="container-page relative flex min-h-[78vh] flex-col justify-end pb-16 pt-32">
-            <p className="label-eyebrow text-background/80">New season · 2026</p>
+            <p className="label-eyebrow text-background/80">Outdoor season · 2026</p>
             <h1 className="display-xl mt-5 max-w-3xl text-background">
-              Furniture That Defines Your Space.
+              Furniture Made for Life Outside.
             </h1>
             <p className="mt-6 max-w-xl text-sm leading-relaxed text-background/85">
-              Considered pieces made in small runs from solid timber, natural fibres and full-grain
-              leather — designed to be lived with for decades.
+              All-weather lounge, dining and shade in FSC teak, hand-woven rope and marine-grade
+              aluminium — built to stay outside, season after season.
             </p>
+
             <div className="mt-10 flex flex-wrap gap-3">
               <Button asChild variant="hero" size="editorial">
                 <Link to="/shop">Shop Collection</Link>
